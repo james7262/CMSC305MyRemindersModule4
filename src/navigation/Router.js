@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from '../screens/Home';
 import TabNavigator from './TabNavigator';
 import AddReminder from '../screens/AddReminder';
+import AddPriority from '../screens/AddPriority';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ const Router = props => {
         />
         <Stack.Screen name={'Get Reminders!'} component={TabNavigator}/>
         <Stack.Screen name={'Add Reminder'} component={AddReminder}/>
+        <Stack.Screen name = {'Add Priority'} component = {AddPriority}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

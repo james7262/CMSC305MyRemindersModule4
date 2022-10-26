@@ -19,6 +19,11 @@ const App: () => Node = () => {
   } catch (error) {
     console.log('Failed to create reminders table ' + error);
   }
+  try {
+    db.createPrioritiesTable();
+  } catch (error) {
+    console.log('Failed to create priorities table ' + error);
+  }
   return <Router />;
 };
 
