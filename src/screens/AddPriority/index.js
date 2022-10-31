@@ -28,7 +28,7 @@ const AddPriority = props => {
         }
 
         alert(title + ' Added!');
-        navigation.navigate('Get Reminders!');
+        navigation.navigate('Add Priority');
     }
 
   return (
